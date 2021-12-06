@@ -2,8 +2,7 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-quit',
-  templateUrl: './quit.component.html',
-  styleUrls: ['./quit.component.scss']
+  templateUrl: './quit.component.html'
 })
 export class QuitComponent implements OnInit {
 
