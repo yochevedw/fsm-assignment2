@@ -72,8 +72,9 @@ The library consists of two functions.
 | moveToNextState | Recives a transition. Sets the current state to be the next state of the given transition + the current state. If no transition recieved returns current state (The first time would be the initial state).  |
 
 ##### Demo
-The demo is a simple registration form with the data listed below.
+The demo is a simple registration form with the states and transitions listed below.
 The data can be recieved from the node.js Server or from a json mock file.
+On every button click the library funciton _moveToNextState_ is called with a transition.The state is then changed to the next state.
 
 | State | Transition | Next State|
 | ------ | ------ |------ |
