@@ -3,8 +3,7 @@ import { CandidateModel } from 'src/app/Models/candidateModel';
 
 @Component({
   selector: 'app-school-details',
-  templateUrl: './school-details.component.html',
-  styleUrls: ['./school-details.component.scss']
+  templateUrl: './school-details.component.html'
 })
 export class SchoolDetailsComponent implements OnInit {
 
