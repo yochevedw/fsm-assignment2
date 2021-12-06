@@ -4,8 +4,7 @@ import { StateEnum } from 'src/app/Utils/enums';
 
 @Component({
   selector: 'app-end',
-  templateUrl: './end.component.html',
-  styleUrls: ['./end.component.scss']
+  templateUrl: './end.component.html'
 })
 export class EndComponent implements OnInit {
 
