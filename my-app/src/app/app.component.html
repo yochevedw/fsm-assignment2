@@ -1,0 +1,17 @@
+<div class="wrapper">
+  <div id="wizard">
+
+    <input type="button" *ngIf="currentState != State.Quit" value="X" class="close" (click)="quit()"/>
+  <app-personal-details *ngIf="currentState == State.PersonalDetails" (moveToNextState)="moveToNextStep($event)" [candidate] = "candidate">
+</app-personal-details>
+<app-job-details *ngIf="currentState == State.JobDetails" (moveToNextState)="moveToNextStep($event)" [candidate] = "candidate"></app-job-details>
+<app-school-details *ngIf="currentState == State.SchoolDetails" (moveToNextState)="moveToNextStep($event)" [candidate] = "candidate"></app-school-details>
+<app-end *ngIf="currentState == State.EndAfterJob || currentState == State.EndAfterSchool" (moveToNextState)="moveToNextStep($event)" [candidate] = "candidate"></app-end>
+<app-quit *ngIf="currentState == State.Quit" (moveToNextState)="moveToNextStep($event)"></app-quit>
+<br/>
+<br/>
+<br/>
+
+</div>
+</div>
+
