@@ -4,8 +4,7 @@ import { employmentStatusEnum } from 'src/app/Utils/enums';
 
 @Component({
   selector: 'app-personal-details',
-  templateUrl: './personal-details.component.html',
-  styleUrls: ['./personal-details.component.scss']
+  templateUrl: './personal-details.component.html'
 })
 export class PersonalDetailsComponent implements OnInit {
   @Input() candidate: CandidateModel = new CandidateModel();
