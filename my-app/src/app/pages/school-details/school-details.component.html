@@ -1,0 +1,14 @@
+
+        <h4>Education Details</h4>
+        <section>
+            <div class="form-row">
+    <input type="text" id="instituteName" class="form-control" placeholder="Institute Name" [(ngModel)] = "candidate.instituteName" />
+    </div>
+    <div class="form-row">
+        <input type="text" id="degreeDetails" class="form-control" placeholder="Degree details" [(ngModel)] = "candidate.degreeDetails"/>
+        </div>
+
+    <input type="button" value="Back" class="previous" (click)="btnBackClicked()" />
+    <input type="button" value="Next" class="next" (click)="btnNextClicked()" />
+    
+        </section>

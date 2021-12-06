@@ -1,0 +1,22 @@
+
+
+            <!-- SECTION 1 -->
+            <h4>Enter personal details</h4>
+            <section>
+                <div class="form-row">
+                    <input type="text" id="firstName" class="form-control" placeholder="Enter First Name" [(ngModel)] = "candidate.firstName"/>
+                </div>
+                <div class="form-row">
+                    <input type="text" id="lastName" class="form-control" placeholder="Enter Last Name" [(ngModel)] = "candidate.lastName"/>
+                </div>
+                <div class="form-row">
+                    <select class="form-control" [(ngModel)] = "employmentStatus">
+                        <option selected disabled value="" >Employment status</option>
+                        <option value="Student">I am a student</option>
+                        <option value="Employed">I am employed</option>
+                 </select>
+                </div>
+                <input type="button" id="btnNext" class="next" value="Next" (click)="btnNextClicked()"/>
+            </section> 
+           
+
